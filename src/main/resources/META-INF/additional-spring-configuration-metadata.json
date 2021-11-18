@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "lol.api.apiKey",
+      "type": "java.lang.String",
+      "description": "Place to insert your LoL api key."
+  }
+] }
