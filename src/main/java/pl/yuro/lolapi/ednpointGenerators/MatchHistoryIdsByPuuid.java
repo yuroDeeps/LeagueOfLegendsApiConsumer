@@ -27,8 +27,6 @@ public class MatchHistoryIdsByPuuid {
     }
 
     public String generateEndpoint(Regions region, String puuid, int count) {
-        queueType.put("solo",420);
-        queueType.put("premade",6);
         return "https://"+region.name()+".api.riotgames.com/lol/match/v5/matches/by-puuid/"+puuid+"/ids?start=0&count="+count+"&api_key="+apiKey;
     }
 }
