@@ -1,4 +1,4 @@
-package pl.yuro.lolapi.entities.matchinfoobjects.obct;
+package pl.yuro.lolapi.entities.matchinfoobjects.perks;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
@@ -6,13 +6,14 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.ArrayList;
+
 @Setter
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class ObjectiveDto {
-
-    private boolean first;
-    private int kills;
+public class PerksDto {
+    private PerkStatsDto statPerks;
+    private ArrayList<PerkStyleDto> styles;
 }

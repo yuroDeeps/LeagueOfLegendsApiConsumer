@@ -11,12 +11,12 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class ObjectivesDTO {
+public class ObjectivesDto {
 
-    private ObjectiveDTO baron;
-    private ObjectiveDTO champion;
-    private ObjectiveDTO dragon;
-    private  ObjectiveDTO inhibitor;
-    private ObjectiveDTO riftHerald;
-    private ObjectiveDTO tower;
+    private ObjectiveDto baron;
+    private ObjectiveDto champion;
+    private ObjectiveDto dragon;
+    private ObjectiveDto inhibitor;
+    private ObjectiveDto riftHerald;
+    private ObjectiveDto tower;
 }

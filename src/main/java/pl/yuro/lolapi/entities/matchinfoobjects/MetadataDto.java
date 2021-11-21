@@ -5,19 +5,16 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import pl.yuro.lolapi.entities.matchinfoobjects.obct.ObjectivesDto;
 
-import java.util.List;
+import java.util.ArrayList;
 
 @Setter
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class TeamDto {
-
-    private List<BanDto> bans;
-    private ObjectivesDto objectives;
-    private int teamId;
-    private boolean win;
+public class MetadataDto {
+    private String dataVersion;
+    private String matchId;
+    private ArrayList<String> participants;
 }
